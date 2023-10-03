@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 267">
+<style>
+.label { font: 14px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-left { font: 12px Helvetica; dominant-baseline: middle; }
+.title-right { font: 12px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.title-intrinsic { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #6778ED; }
+.title { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-unused { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #AAA; }
+.register-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; font-style: italic; }
+.memory-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.register-number { font: 14px Helvetica; dominant-baseline: middle; text-anchor: start; }
+.intrinsic-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; fill: #6778ED; }
+.intrinsic-color { fill: #6778ED; }
+.small-label { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-10px { font: 10px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.smaller-label { font: 9px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-6px { font: 6px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-7px { font: 7px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.unused { fill: #AAA; }
+.dim { fill: #888; }
+</style>
+<defs>
+<marker id="arrowhead" markerWidth="10.75" markerHeight="24.5" refX="9.0" refY="6.125" orient="auto">
+<polyline points="0.5 0.5, 8.75 6.125, 0.5 11.75" stroke="#567DB6" stroke-width="1" fill="none"/>
+</marker>
+</defs>
+<polyline fill="none" points="387.5 43.5,389.5 47.5,479.5 47.5,480.5 49.5,480.5 53.5,480.5 49.5,481.5 47.5,571.5 47.5,573.5 43.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="99.5 89.5,101.5 85.5,479.5 85.5,480.5 83.5,480.5 79.5,480.5 83.5,481.5 85.5,859.5 85.5,861.5 89.5" stroke="#567DB6" stroke-width="1" />
+<line stroke="#567DB6" stroke-width="1" x1="480.5" x2="480.5" y1="53.5" y2="79.5" />
+<polyline fill="none" points="387.5 185.5,389.5 181.5,479.5 181.5,480.5 179.5,480.5 175.5,480.5 179.5,481.5 181.5,571.5 181.5,573.5 185.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="675.5 115.5,677.5 119.5,767.5 119.5,768.5 121.5,768.5 125.5,768.5 121.5,769.5 119.5,859.5 119.5,861.5 115.5" stroke="#567DB6" stroke-width="1" />
+<line stroke="#567DB6" stroke-width="1" x1="768.5" x2="480.5" y1="125.5" y2="175.5" />
+<polyline fill="none" points="483.5 115.5,485.5 119.5,575.5 119.5,576.5 121.5,576.5 125.5,576.5 121.5,577.5 119.5,667.5 119.5,669.5 115.5" stroke="#567DB6" stroke-width="1" />
+<line stroke="#567DB6" stroke-width="1" x1="576.5" x2="480.5" y1="125.5" y2="175.5" />
+<polyline fill="none" points="291.5 115.5,293.5 119.5,383.5 119.5,384.5 121.5,384.5 125.5,384.5 121.5,385.5 119.5,475.5 119.5,477.5 115.5" stroke="#567DB6" stroke-width="1" />
+<line stroke="#567DB6" stroke-width="1" x1="384.5" x2="480.5" y1="125.5" y2="175.5" />
+<polyline fill="none" points="99.5 115.5,101.5 119.5,191.5 119.5,192.5 121.5,192.5 125.5,192.5 121.5,193.5 119.5,283.5 119.5,285.5 115.5" stroke="#567DB6" stroke-width="1" />
+<line stroke="#567DB6" stroke-width="1" x1="192.5" x2="480.5" y1="125.5" y2="175.5" />
+<line stroke="#567DB6" stroke-width="1" x1="570.5" x2="570.5" y1="211.5" y2="233" />
+<line stroke="#567DB6" stroke-width="1" x1="522.5" x2="522.5" y1="211.5" y2="233" />
+<line stroke="#567DB6" stroke-width="1" x1="474.5" x2="474.5" y1="211.5" y2="233" />
+<line stroke="#567DB6" stroke-width="1" x1="426.5" x2="426.5" y1="211.5" y2="233" />
+<text class="title-left" x="90.5" y="9.5">upper</text>
+<text class="title-right" x="858.5" y="9.5">lower</text>
+<text class="label" x="482" y="63.5">decode predicate-as-counter</text>
+<text class="label" x="768.5" y="135.5">imm=0</text>
+<text class="label" x="576.5" y="135.5">imm=1</text>
+<text class="label" x="384.5" y="135.5">imm=2</text>
+<text class="label" x="192.5" y="135.5">imm=3</text>
+<rect fill="#DEE6F1" height="24" width="12" x="564.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="564.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="552.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="552.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="540.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="540.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="528.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="528.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="516.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="516.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="504.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="504.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="492.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="492.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="480.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="480.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="468.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="468.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="456.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="456.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="444.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="444.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="432.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="432.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="420.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="420.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="408.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="408.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="396.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="396.5" y="18.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="384.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="384.5" y="18.5" />
+<text class="register-name" x="80.5" y="30.5">PNn</text>
+<text class="register-number" x="10" y="30.5">(1)</text>
+<rect fill="#DEE6F1" height="24" width="192" x="672.5" y="90.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="851.5" x2="851.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="839.5" x2="839.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="827.5" x2="827.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="815.5" x2="815.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="803.5" x2="803.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="792.5" x2="792.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="780.5" x2="780.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="768.5" x2="768.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="756.5" x2="756.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="744.5" x2="744.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="733.5" x2="733.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="721.5" x2="721.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="709.5" x2="709.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="697.5" x2="697.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="685.5" x2="685.5" y1="91" y2="114.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="192" x="672.5" y="90.5" />
+<rect fill="#DEE6F1" height="24" width="192" x="480.5" y="90.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="659.5" x2="659.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="647.5" x2="647.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="635.5" x2="635.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="623.5" x2="623.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="611.5" x2="611.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="600.5" x2="600.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="588.5" x2="588.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="576.5" x2="576.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="564.5" x2="564.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="552.5" x2="552.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="541.5" x2="541.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="529.5" x2="529.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="517.5" x2="517.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="505.5" x2="505.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="493.5" x2="493.5" y1="91" y2="114.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="192" x="480.5" y="90.5" />
+<rect fill="#DEE6F1" height="24" width="192" x="288.5" y="90.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="467.5" x2="467.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="455.5" x2="455.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="443.5" x2="443.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="431.5" x2="431.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="419.5" x2="419.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="408.5" x2="408.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="396.5" x2="396.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="384.5" x2="384.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="372.5" x2="372.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="360.5" x2="360.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="349.5" x2="349.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="337.5" x2="337.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="325.5" x2="325.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="313.5" x2="313.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="301.5" x2="301.5" y1="91" y2="114.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="192" x="288.5" y="90.5" />
+<rect fill="#DEE6F1" height="24" width="192" x="96.5" y="90.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="275.5" x2="275.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="263.5" x2="263.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="251.5" x2="251.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="239.5" x2="239.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="227.5" x2="227.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="216.5" x2="216.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="204.5" x2="204.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="192.5" x2="192.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="180.5" x2="180.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="168.5" x2="168.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="157.5" x2="157.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="145.5" x2="145.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="133.5" x2="133.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="121.5" x2="121.5" y1="91" y2="114.5" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="1" x1="109.5" x2="109.5" y1="91" y2="114.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="192" x="96.5" y="90.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="564.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="564.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="552.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="552.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="540.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="540.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="528.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="528.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="516.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="516.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="504.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="504.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="492.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="492.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="480.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="480.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="468.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="468.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="456.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="456.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="444.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="444.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="432.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="432.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="420.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="420.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="408.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="408.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="396.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="396.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="384.5" y="186.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="384.5" y="186.5" />
+<rect fill="#DEE6F1" height="24" width="12" x="564.5" y="234.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="564.5" y="234.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="552.5" y="234.5" />
+<text class="label unused" x="558.5" y="247.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="540.5" y="234.5" />
+<text class="label unused" x="546.5" y="247.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="528.5" y="234.5" />
+<text class="label unused" x="534.5" y="247.5">0</text>
+<rect fill="#DEE6F1" height="24" width="12" x="516.5" y="234.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="516.5" y="234.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="504.5" y="234.5" />
+<text class="label unused" x="510.5" y="247.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="492.5" y="234.5" />
+<text class="label unused" x="498.5" y="247.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="480.5" y="234.5" />
+<text class="label unused" x="486.5" y="247.5">0</text>
+<rect fill="#DEE6F1" height="24" width="12" x="468.5" y="234.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="468.5" y="234.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="456.5" y="234.5" />
+<text class="label unused" x="462.5" y="247.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="444.5" y="234.5" />
+<text class="label unused" x="450.5" y="247.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="432.5" y="234.5" />
+<text class="label unused" x="438.5" y="247.5">0</text>
+<rect fill="#DEE6F1" height="24" width="12" x="420.5" y="234.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="12" x="420.5" y="234.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="408.5" y="234.5" />
+<text class="label unused" x="414.5" y="247.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="396.5" y="234.5" />
+<text class="label unused" x="402.5" y="247.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="384.5" y="234.5" />
+<text class="label unused" x="390.5" y="247.5">0</text>
+<text class="register-name" x="80.5" y="246.5">Pd</text>
+<text class="register-number" x="10" y="246.5">(2)</text>
+<line marker-end="url(#arrowhead)" stroke="none" x1="570.5" x2="570.5" y1="211.5" y2="233" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="522.5" x2="522.5" y1="211.5" y2="233" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="474.5" x2="474.5" y1="211.5" y2="233" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="426.5" x2="426.5" y1="211.5" y2="233" />
+</svg>

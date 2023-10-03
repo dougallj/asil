@@ -1,0 +1,452 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 870 375">
+<style>
+.label { font: 14px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-left { font: 12px Helvetica; dominant-baseline: middle; }
+.title-right { font: 12px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.title-intrinsic { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #6778ED; }
+.title { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-unused { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #AAA; }
+.register-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; font-style: italic; }
+.memory-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.register-number { font: 14px Helvetica; dominant-baseline: middle; text-anchor: start; }
+.intrinsic-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; fill: #6778ED; }
+.intrinsic-color { fill: #6778ED; }
+.small-label { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-10px { font: 10px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.smaller-label { font: 9px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-6px { font: 6px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-7px { font: 7px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.unused { fill: #AAA; }
+.dim { fill: #888; }
+</style>
+<defs>
+<marker id="arrowhead" markerWidth="10.75" markerHeight="24.5" refX="9.0" refY="6.125" orient="auto">
+<polyline points="0.5 0.5, 8.75 6.125, 0.5 11.75" stroke="#567DB6" stroke-width="1" fill="none"/>
+</marker>
+</defs>
+<text class="title-left" x="90.5" y="9.5">upper</text>
+<text class="title-right" x="858.5" y="9.5">lower</text>
+<rect fill="#DEE6F1" height="24" width="48" x="810.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="810.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="834.5" y="31.5">base[0]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="762.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="762.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="786.5" y="31.5">base[1]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="714.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="714.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="738.5" y="31.5">base[2]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="666.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="666.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="690.5" y="31.5">base[3]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="618.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="642.5" y="31.5">base[4]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="570.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="594.5" y="31.5">base[5]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="522.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="522.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="546.5" y="31.5">base[6]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="474.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="474.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="498.5" y="31.5">base[7]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="426.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="426.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="450.5" y="31.5">base[8]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="378.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="378.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="402.5" y="31.5">base[9]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="330.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="330.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="354.5" y="31.5">base[10]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="282.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="282.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="306.5" y="31.5">base[11]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="234.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="258.5" y="31.5">base[12]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="186.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="210.5" y="31.5">base[13]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="138.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="138.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="162.5" y="31.5">base[14]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="90.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="90.5" y="18.5" />
+<text class="smaller-label intrinsic-color" x="114.5" y="31.5">base[15]</text>
+<text class="register-name" x="80.5" y="30.5">[mem]</text>
+<text class="intrinsic-name" x="80.5" y="42.5">*base</text>
+<text class="register-number" x="10" y="30.5">(1)</text>
+<rect fill="#DEE6F1" height="24" width="48" x="810.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="810.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="834.5" y="67.5">base[16]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="762.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="762.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="786.5" y="67.5">base[17]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="714.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="714.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="738.5" y="67.5">base[18]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="666.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="666.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="690.5" y="67.5">base[19]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="618.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="642.5" y="67.5">base[20]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="570.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="594.5" y="67.5">base[21]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="522.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="522.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="546.5" y="67.5">base[22]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="474.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="474.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="498.5" y="67.5">base[23]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="426.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="426.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="450.5" y="67.5">base[24]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="378.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="378.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="402.5" y="67.5">base[25]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="330.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="330.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="354.5" y="67.5">base[26]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="282.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="282.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="306.5" y="67.5">base[27]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="234.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="258.5" y="67.5">base[28]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="186.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="210.5" y="67.5">base[29]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="138.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="138.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="162.5" y="67.5">base[30]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="90.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="90.5" y="54.5" />
+<text class="smaller-label intrinsic-color" x="114.5" y="67.5">base[31]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="810.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="810.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="834.5" y="103.5">base[32]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="762.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="762.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="786.5" y="103.5">base[33]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="714.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="714.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="738.5" y="103.5">base[34]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="666.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="666.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="690.5" y="103.5">base[35]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="618.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="642.5" y="103.5">base[36]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="570.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="594.5" y="103.5">base[37]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="522.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="522.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="546.5" y="103.5">base[38]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="474.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="474.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="498.5" y="103.5">base[39]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="426.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="426.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="450.5" y="103.5">base[40]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="378.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="378.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="402.5" y="103.5">base[41]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="330.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="330.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="354.5" y="103.5">base[42]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="282.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="282.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="306.5" y="103.5">base[43]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="234.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="258.5" y="103.5">base[44]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="186.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="210.5" y="103.5">base[45]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="138.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="138.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="162.5" y="103.5">base[46]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="90.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="90.5" y="90.5" />
+<text class="smaller-label intrinsic-color" x="114.5" y="103.5">base[47]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="810.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="810.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="834.5" y="139.5">base[48]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="762.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="762.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="786.5" y="139.5">base[49]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="714.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="714.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="738.5" y="139.5">base[50]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="666.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="666.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="690.5" y="139.5">base[51]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="618.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="642.5" y="139.5">base[52]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="570.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="594.5" y="139.5">base[53]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="522.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="522.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="546.5" y="139.5">base[54]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="474.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="474.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="498.5" y="139.5">base[55]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="426.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="426.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="450.5" y="139.5">base[56]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="378.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="378.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="402.5" y="139.5">base[57]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="330.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="330.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="354.5" y="139.5">base[58]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="282.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="282.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="306.5" y="139.5">base[59]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="234.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="258.5" y="139.5">base[60]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="186.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="210.5" y="139.5">base[61]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="138.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="138.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="162.5" y="139.5">base[62]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="90.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="90.5" y="126.5" />
+<text class="smaller-label intrinsic-color" x="114.5" y="139.5">base[63]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="810.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="810.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="834.5" y="211.5">base[0]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="762.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="762.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="786.5" y="211.5">base[4]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="714.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="714.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="738.5" y="211.5">base[8]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="666.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="666.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="690.5" y="211.5">base[12]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="618.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="642.5" y="211.5">base[16]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="570.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="594.5" y="211.5">base[20]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="522.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="522.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="546.5" y="211.5">base[24]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="474.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="474.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="498.5" y="211.5">base[28]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="426.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="426.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="450.5" y="211.5">base[32]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="378.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="378.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="402.5" y="211.5">base[36]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="330.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="330.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="354.5" y="211.5">base[40]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="282.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="282.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="306.5" y="211.5">base[44]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="234.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="258.5" y="211.5">base[48]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="186.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="210.5" y="211.5">base[52]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="138.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="138.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="162.5" y="211.5">base[56]</text>
+<rect fill="#DEE6F1" height="24" width="48" x="90.5" y="198.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="90.5" y="198.5" />
+<text class="smaller-label intrinsic-color" x="114.5" y="211.5">base[60]</text>
+<text class="register-name" x="80.5" y="210.5">Zt1</text>
+<text class="intrinsic-name" x="80.5" y="222.5">ret[0]</text>
+<text class="register-number" x="10" y="210.5">(2)</text>
+<rect fill="#EEDDDB" height="24" width="48" x="810.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="810.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="834.5" y="259.5">base[1]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="762.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="762.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="786.5" y="259.5">base[5]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="714.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="714.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="738.5" y="259.5">base[9]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="666.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="666.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="690.5" y="259.5">base[13]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="618.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="642.5" y="259.5">base[17]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="570.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="594.5" y="259.5">base[21]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="522.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="522.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="546.5" y="259.5">base[25]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="474.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="474.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="498.5" y="259.5">base[29]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="426.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="426.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="450.5" y="259.5">base[33]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="378.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="378.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="402.5" y="259.5">base[37]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="330.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="330.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="354.5" y="259.5">base[41]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="282.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="282.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="306.5" y="259.5">base[45]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="234.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="258.5" y="259.5">base[49]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="186.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="210.5" y="259.5">base[53]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="138.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="138.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="162.5" y="259.5">base[57]</text>
+<rect fill="#EEDDDB" height="24" width="48" x="90.5" y="246.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="90.5" y="246.5" />
+<text class="smaller-label intrinsic-color" x="114.5" y="259.5">base[61]</text>
+<text class="register-name" x="80.5" y="258.5">Zt2</text>
+<text class="intrinsic-name" x="80.5" y="270.5">ret[1]</text>
+<text class="register-number" x="10" y="258.5">(3)</text>
+<rect fill="#ECF1E0" height="24" width="48" x="810.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="810.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="834.5" y="307.5">base[2]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="762.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="762.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="786.5" y="307.5">base[6]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="714.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="714.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="738.5" y="307.5">base[10]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="666.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="666.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="690.5" y="307.5">base[14]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="618.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="642.5" y="307.5">base[18]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="570.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="594.5" y="307.5">base[22]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="522.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="522.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="546.5" y="307.5">base[26]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="474.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="474.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="498.5" y="307.5">base[30]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="426.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="426.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="450.5" y="307.5">base[34]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="378.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="378.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="402.5" y="307.5">base[38]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="330.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="330.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="354.5" y="307.5">base[42]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="282.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="282.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="306.5" y="307.5">base[46]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="234.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="258.5" y="307.5">base[50]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="186.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="210.5" y="307.5">base[54]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="138.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="138.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="162.5" y="307.5">base[58]</text>
+<rect fill="#ECF1E0" height="24" width="48" x="90.5" y="294.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="90.5" y="294.5" />
+<text class="smaller-label intrinsic-color" x="114.5" y="307.5">base[62]</text>
+<text class="register-name" x="80.5" y="306.5">Zt3</text>
+<text class="intrinsic-name" x="80.5" y="318.5">ret[2]</text>
+<text class="register-number" x="10" y="306.5">(4)</text>
+<rect fill="#E5E0EB" height="24" width="48" x="810.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="810.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="834.5" y="355.5">base[3]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="762.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="762.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="786.5" y="355.5">base[7]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="714.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="714.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="738.5" y="355.5">base[11]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="666.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="666.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="690.5" y="355.5">base[15]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="618.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="642.5" y="355.5">base[19]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="570.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="594.5" y="355.5">base[23]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="522.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="522.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="546.5" y="355.5">base[27]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="474.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="474.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="498.5" y="355.5">base[31]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="426.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="426.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="450.5" y="355.5">base[35]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="378.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="378.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="402.5" y="355.5">base[39]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="330.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="330.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="354.5" y="355.5">base[43]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="282.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="282.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="306.5" y="355.5">base[47]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="234.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="258.5" y="355.5">base[51]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="186.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="210.5" y="355.5">base[55]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="138.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="138.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="162.5" y="355.5">base[59]</text>
+<rect fill="#E5E0EB" height="24" width="48" x="90.5" y="342.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="90.5" y="342.5" />
+<text class="smaller-label intrinsic-color" x="114.5" y="355.5">base[63]</text>
+<text class="register-name" x="80.5" y="354.5">Zt4</text>
+<text class="intrinsic-name" x="80.5" y="366.5">ret[3]</text>
+<text class="register-number" x="10" y="354.5">(5)</text>
+<line stroke="#567DB6" stroke-width="1" x1="834.5" x2="834.5" y1="43.5" y2="197" />
+<line stroke="#567DB6" stroke-width="1" x1="786.5" x2="834.5" y1="43.5" y2="245" />
+<line stroke="#567DB6" stroke-width="1" x1="738.5" x2="834.5" y1="43.5" y2="293" />
+<line stroke="#567DB6" stroke-width="1" x1="690.5" x2="834.5" y1="43.5" y2="341" />
+<line stroke="#567DB6" stroke-dasharray="4 3" stroke-width="1" x1="642.5" x2="786.5" y1="43.5" y2="197" />
+<line stroke="#567DB6" stroke-dasharray="4 3" stroke-width="1" x1="594.5" x2="786.5" y1="43.5" y2="245" />
+<line stroke="#567DB6" stroke-dasharray="4 3" stroke-width="1" x1="546.5" x2="786.5" y1="43.5" y2="293" />
+<line stroke="#567DB6" stroke-dasharray="4 3" stroke-width="1" x1="498.5" x2="786.5" y1="43.5" y2="341" />
+<line stroke="#567DB6" stroke-width="1" x1="258.5" x2="114.5" y1="151.5" y2="197" />
+<line stroke="#567DB6" stroke-width="1" x1="210.5" x2="114.5" y1="151.5" y2="245" />
+<line stroke="#567DB6" stroke-width="1" x1="162.5" x2="114.5" y1="151.5" y2="293" />
+<line stroke="#567DB6" stroke-width="1" x1="109.5" x2="109.5" y1="151.5" y2="341" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="834.5" x2="834.5" y1="43.5" y2="197" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="786.5" x2="834.5" y1="43.5" y2="245" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="738.5" x2="834.5" y1="43.5" y2="293" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="690.5" x2="834.5" y1="43.5" y2="341" />
+<line marker-end="url(#arrowhead)" stroke="none" stroke-dasharray="4 3" x1="642.5" x2="786.5" y1="43.5" y2="197" />
+<line marker-end="url(#arrowhead)" stroke="none" stroke-dasharray="4 3" x1="594.5" x2="786.5" y1="43.5" y2="245" />
+<line marker-end="url(#arrowhead)" stroke="none" stroke-dasharray="4 3" x1="546.5" x2="786.5" y1="43.5" y2="293" />
+<line marker-end="url(#arrowhead)" stroke="none" stroke-dasharray="4 3" x1="498.5" x2="786.5" y1="43.5" y2="341" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="258.5" x2="114.5" y1="151.5" y2="197" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="210.5" x2="114.5" y1="151.5" y2="245" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="162.5" x2="114.5" y1="151.5" y2="293" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="109.5" x2="109.5" y1="151.5" y2="341" />
+</svg>

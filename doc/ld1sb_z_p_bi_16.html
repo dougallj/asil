@@ -1,0 +1,88 @@
+<html>
+<head><meta charset="UTF-8">
+<style>
+
+	td {
+		background-color: #FFFFFF;
+		font-size: 9pt;
+	}
+
+	table {
+		background-color: #ccc;
+	}
+
+	td.empty {
+		background-color: #ddd;
+	}
+	th {
+		background-color: #eee;
+		min-width: 48px;
+	}
+
+    body {
+        font-family: sans-serif;
+        font-size: 10pt;
+    }
+    a {
+    	color: #000;
+    	white-space: nowrap;
+    }
+    .intrinsics {
+    	color: #6778ED;
+    }
+
+    .group:not(:first-child) {
+    	/*border-top: 1px solid #ccc;*/
+	    margin-top: 2px;
+	}
+
+	img, canvas {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	canvas {
+	  image-rendering: pixelated;
+	  image-rendering: -moz-crisp-edges;
+	  image-rendering: crisp-edges;
+	}
+</style>
+<script>
+function useLowDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		img.src = img.src.replace('/svg/', '/lowdpi/');
+	})
+	document.getElementById('highdpi').style.display = 'inline';
+	document.getElementById('lowdpi').style.display = 'none';
+}
+function switchToLowDPI() {
+	useLowDPI();
+	localStorage.setItem("dpi", "low");
+}
+function useHighDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		if (img.src !== img.src.replace('/lowdpi/', '/svg/'))
+			img.src = img.src.replace('/lowdpi/', '/svg/');
+	})
+	document.getElementById('highdpi').style.display = 'none';
+	document.getElementById('lowdpi').style.display = 'inline';
+}
+function switchToHighDPI() {
+	useHighDPI();
+	localStorage.setItem("dpi", "high");
+}
+</script>
+<title>LD1SB (scalar plus immediate): Contiguous load signed bytes to vector (immediate index)</title>
+</head>
+<body>
+<a href="../index.html">SVE Instruction List</a> by <a href="https://mastodon.social/@dougall">Dougall Johnson</a>
+<div style="float:right"><a href="https://docsmirror.github.io/A64/2023-06/ld1sb_z_p_bi.html">See "LD1SB (scalar plus immediate)" in the exploration tools</a></div><h1>LD1SB (scalar plus immediate): Contiguous load signed bytes to vector (immediate index)</h1><div><span style="font-family: monospace; margin-right: 20px;">LD1SB { Zt.H }, Pg/Z, [Xn{, #imm, MUL VL}]</span> <span style="margin-left: 20px">(SVE</span> <span style="margin-left: 20px">(SME</span></div><div class="intrinsics"><div>svint16_t svld1sb_vnum_s16(svbool_t pg, const int8_t *base, int64_t vnum)</div><div>svuint16_t svld1sb_vnum_u16(svbool_t pg, const int8_t *base, int64_t vnum)</div></div><h2>128-bit SVE</h2><img src="../svg/ld1sb_mem_Zt_16_128.svg" width="486" height="123"><div style="padding-left: 90px; max-width: 800px;">Load 8-bit values from the memory operand (1) and sign extend them, writing the results to the 16-bit elements of (2). If the predicate bit corresponding to an element in (2) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero.</div><h2>256-bit SVE</h2><img src="../svg/ld1sb_mem_Zt_16_256.svg" width="870" height="123"><div style="padding-left: 90px; max-width: 800px;">Load 8-bit values from the memory operand (1) and sign extend them, writing the results to the 16-bit elements of (2). If the predicate bit corresponding to an element in (2) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero.</div><h2>512-bit SVE</h2><img src="../svg/ld1sb_mem_Zt_16_512.svg" width="1638" height="123"><div style="padding-left: 90px; max-width: 800px;">Load 8-bit values from the memory operand (1) and sign extend them, writing the results to the 16-bit elements of (2). If the predicate bit corresponding to an element in (2) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero.</div><hr><details><summary>Larger sizes</summary><h2>1024-bit SVE</h2><img src="../svg/ld1sb_mem_Zt_16_1024.svg" width="3174" height="123"><div style="padding-left: 90px; max-width: 800px;">Load 8-bit values from the memory operand (1) and sign extend them, writing the results to the 16-bit elements of (2). If the predicate bit corresponding to an element in (2) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero.</div><h2>2048-bit SVE</h2><img src="../svg/ld1sb_mem_Zt_16_2048.svg" width="6246" height="123"><div style="padding-left: 90px; max-width: 800px;">Load 8-bit values from the memory operand (1) and sign extend them, writing the results to the 16-bit elements of (2). If the predicate bit corresponding to an element in (2) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero.</div></details><hr>
+<script>document.write('<a href="javascript:switchToHighDPI()" id="highdpi">Switch to High-DPI</a><a href="javascript:switchToLowDPI()" id="lowdpi">Switch to Low-DPI</a><br>');
+useHighDPI();
+if (localStorage.getItem('dpi') === "low") {
+	useLowDPI();
+}
+
+</script>
+<a href="https://github.com/dougallj/asil/issues">Report mistakes or give feedback</a><br>
+Inspired by and based on the <a href="https://www.officedaytime.com/simd512e/">x86/x64 SIMD Instruction List</a> by Daytime.

@@ -1,0 +1,88 @@
+<html>
+<head><meta charset="UTF-8">
+<style>
+
+	td {
+		background-color: #FFFFFF;
+		font-size: 9pt;
+	}
+
+	table {
+		background-color: #ccc;
+	}
+
+	td.empty {
+		background-color: #ddd;
+	}
+	th {
+		background-color: #eee;
+		min-width: 48px;
+	}
+
+    body {
+        font-family: sans-serif;
+        font-size: 10pt;
+    }
+    a {
+    	color: #000;
+    	white-space: nowrap;
+    }
+    .intrinsics {
+    	color: #6778ED;
+    }
+
+    .group:not(:first-child) {
+    	/*border-top: 1px solid #ccc;*/
+	    margin-top: 2px;
+	}
+
+	img, canvas {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	canvas {
+	  image-rendering: pixelated;
+	  image-rendering: -moz-crisp-edges;
+	  image-rendering: crisp-edges;
+	}
+</style>
+<script>
+function useLowDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		img.src = img.src.replace('/svg/', '/lowdpi/');
+	})
+	document.getElementById('highdpi').style.display = 'inline';
+	document.getElementById('lowdpi').style.display = 'none';
+}
+function switchToLowDPI() {
+	useLowDPI();
+	localStorage.setItem("dpi", "low");
+}
+function useHighDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		if (img.src !== img.src.replace('/lowdpi/', '/svg/'))
+			img.src = img.src.replace('/lowdpi/', '/svg/');
+	})
+	document.getElementById('highdpi').style.display = 'none';
+	document.getElementById('lowdpi').style.display = 'inline';
+}
+function switchToHighDPI() {
+	useHighDPI();
+	localStorage.setItem("dpi", "high");
+}
+</script>
+<title>STR (vector): Store vector register</title>
+</head>
+<body>
+<a href="../index.html">SVE Instruction List</a> by <a href="https://mastodon.social/@dougall">Dougall Johnson</a>
+<div style="float:right"><a href="https://docsmirror.github.io/A64/2023-06/str_z_bi.html">See "STR (vector)" in the exploration tools</a></div><h1>STR (vector): Store vector register</h1><div><span style="font-family: monospace; margin-right: 20px;">STR Zt, [Xn{, #imm, MUL VL}]</span> <span style="margin-left: 20px">(SVE</span> <span style="margin-left: 20px">(SME</span></div><div class="intrinsics"></div><h2>128-bit SVE</h2><img src="../svg/str_Zt_mem_8_128.svg" width="486" height="123"><div style="padding-left: 90px; max-width: 800px;">Store a vector register to memory. On 128-bit SVE, this stores 16 bytes to memory (2), from a 128-bit register (1), with the address is calculated as <span style="white-space: nowrap;">Xn + imm * 16.</span></div><h2>256-bit SVE</h2><img src="../svg/str_Zt_mem_8_256.svg" width="870" height="123"><div style="padding-left: 90px; max-width: 800px;">Store a vector register to memory. On 256-bit SVE, this stores 32 bytes to memory (2), from a 256-bit register (1), with the address is calculated as <span style="white-space: nowrap;">Xn + imm * 32.</span></div><h2>512-bit SVE</h2><img src="../svg/str_Zt_mem_8_512.svg" width="1638" height="123"><div style="padding-left: 90px; max-width: 800px;">Store a vector register to memory. On 512-bit SVE, this stores 64 bytes to memory (2), from a 512-bit register (1), with the address is calculated as <span style="white-space: nowrap;">Xn + imm * 64.</span></div><hr><details><summary>Larger sizes</summary><h2>1024-bit SVE</h2><img src="../svg/str_Zt_mem_8_1024.svg" width="3174" height="123"><div style="padding-left: 90px; max-width: 800px;">Store a vector register to memory. On 1024-bit SVE, this stores 128 bytes to memory (2), from a 1024-bit register (1), with the address is calculated as <span style="white-space: nowrap;">Xn + imm * 128.</span></div><h2>2048-bit SVE</h2><img src="../svg/str_Zt_mem_8_2048.svg" width="6246" height="123"><div style="padding-left: 90px; max-width: 800px;">Store a vector register to memory. On 2048-bit SVE, this stores 256 bytes to memory (2), from a 2048-bit register (1), with the address is calculated as <span style="white-space: nowrap;">Xn + imm * 256.</span></div></details><hr>
+<script>document.write('<a href="javascript:switchToHighDPI()" id="highdpi">Switch to High-DPI</a><a href="javascript:switchToLowDPI()" id="lowdpi">Switch to Low-DPI</a><br>');
+useHighDPI();
+if (localStorage.getItem('dpi') === "low") {
+	useLowDPI();
+}
+
+</script>
+<a href="https://github.com/dougallj/asil/issues">Report mistakes or give feedback</a><br>
+Inspired by and based on the <a href="https://www.officedaytime.com/simd512e/">x86/x64 SIMD Instruction List</a> by Daytime.

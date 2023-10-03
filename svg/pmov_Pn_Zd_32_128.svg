@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486 267">
+<style>
+.label { font: 14px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-left { font: 12px Helvetica; dominant-baseline: middle; }
+.title-right { font: 12px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.title-intrinsic { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #6778ED; }
+.title { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-unused { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #AAA; }
+.register-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; font-style: italic; }
+.memory-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.register-number { font: 14px Helvetica; dominant-baseline: middle; text-anchor: start; }
+.intrinsic-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; fill: #6778ED; }
+.intrinsic-color { fill: #6778ED; }
+.small-label { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-10px { font: 10px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.smaller-label { font: 9px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-6px { font: 6px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-7px { font: 7px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.unused { fill: #AAA; }
+.dim { fill: #888; }
+</style>
+<defs>
+<marker id="arrowhead" markerWidth="9.5" markerHeight="21.0" refX="7.75" refY="5.25" orient="auto">
+<polyline points="0.5 0.5, 7.5 5.25, 0.5 10.0" stroke="#567DB6" stroke-width="1" fill="none"/>
+</marker>
+</defs>
+<line stroke="#567DB6" stroke-width="1" x1="372" x2="323.75" y1="114.5" y2="161" />
+<line stroke="#567DB6" stroke-width="1" x1="324" x2="311.75" y1="114.5" y2="161" />
+<line stroke="#567DB6" stroke-width="1" x1="276" x2="300.25" y1="114.5" y2="161" />
+<line stroke="#567DB6" stroke-width="1" x1="228" x2="288.25" y1="114.5" y2="161" />
+<line stroke="#567DB6" stroke-dasharray="3 3" stroke-width="0.75" x1="186" x2="426" y1="186.5" y2="233.5" />
+<line stroke="#567DB6" stroke-dasharray="3 3" stroke-width="0.75" x1="378" x2="474" y1="186.5" y2="233.5" />
+<line stroke="#567DB6" stroke-dasharray="3 3" stroke-width="0.75" x1="426" x2="186" y1="42.5" y2="161.5" />
+<line stroke="#567DB6" stroke-dasharray="3 3" stroke-width="0.75" x1="474" x2="378" y1="42.5" y2="161.5" />
+<text class="title-left" x="90" y="9">upper</text>
+<text class="title-right" x="474" y="9">lower</text>
+<text class="title-left" x="90" y="51.5">if imm ≠ 0, preserve all other bits from Zd</text>
+<text class="title-left" x="90" y="64.5">if imm = 0, fill with zero</text>
+<text class="title-unused" x="354" y="152.5">0</text>
+<text class="title-intrinsic" x="306" y="195.5">imm=1</text>
+<text class="title-unused" x="258" y="152.5">2</text>
+<text class="title-unused" x="210" y="152.5">3</text>
+<rect fill="#ECF1E0" height="24" width="12" x="462" y="18" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="462" y="18" />
+<rect fill="#ECF1E0" height="24" width="12" x="450" y="18" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="450" y="18" />
+<rect fill="#ECF1E0" height="24" width="12" x="438" y="18" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="438" y="18" />
+<rect fill="#ECF1E0" height="24" width="12" x="426" y="18" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="426" y="18" />
+<rect fill="#ECF1E0" height="24" width="336" x="90" y="18" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="336" x="90" y="18" />
+<text class="register-name" x="80" y="30">Zd or 0</text>
+<text class="register-number" x="10" y="30">(1)</text>
+<rect fill="#DEE6F1" height="24" width="12" x="366" y="90" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="366" y="90" />
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="354" y="90" />
+<text class="label unused" x="360" y="103"></text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="342" y="90" />
+<text class="label unused" x="348" y="103"></text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="330" y="90" />
+<text class="label unused" x="336" y="103"></text>
+<rect fill="#DEE6F1" height="24" width="12" x="318" y="90" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="318" y="90" />
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="306" y="90" />
+<text class="label unused" x="312" y="103"></text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="294" y="90" />
+<text class="label unused" x="300" y="103"></text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="282" y="90" />
+<text class="label unused" x="288" y="103"></text>
+<rect fill="#DEE6F1" height="24" width="12" x="270" y="90" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="270" y="90" />
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="258" y="90" />
+<text class="label unused" x="264" y="103"></text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="246" y="90" />
+<text class="label unused" x="252" y="103"></text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="234" y="90" />
+<text class="label unused" x="240" y="103"></text>
+<rect fill="#DEE6F1" height="24" width="12" x="222" y="90" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="222" y="90" />
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="210" y="90" />
+<text class="label unused" x="216" y="103"></text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="198" y="90" />
+<text class="label unused" x="204" y="103"></text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="12" x="186" y="90" />
+<text class="label unused" x="192" y="103"></text>
+<text class="register-name" x="80" y="102">Pn</text>
+<text class="register-number" x="10" y="102">(2)</text>
+<rect fill="#ECF1E0" height="24" width="48" x="330" y="162" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="365.5" x2="365.5" y1="162" y2="186" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="354" x2="354" y1="162" y2="186" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="342.5" x2="342.5" y1="162" y2="186" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="48" x="330" y="162" />
+<rect fill="#DEE6F1" height="24" width="48" x="282" y="162" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="317.5" x2="317.5" y1="162" y2="186" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="306" x2="306" y1="162" y2="186" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="294.5" x2="294.5" y1="162" y2="186" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="48" x="282" y="162" />
+<rect fill="#ECF1E0" height="24" width="48" x="234" y="162" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="269.5" x2="269.5" y1="162" y2="186" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="258" x2="258" y1="162" y2="186" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="246.5" x2="246.5" y1="162" y2="186" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="48" x="234" y="162" />
+<rect fill="#ECF1E0" height="24" width="48" x="186" y="162" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="221.5" x2="221.5" y1="162" y2="186" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="210" x2="210" y1="162" y2="186" />
+<line stroke="#405C86" stroke-dasharray="3 1" stroke-width="0.75" x1="198.5" x2="198.5" y1="162" y2="186" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="48" x="186" y="162" />
+<rect fill="#ECF1E0" height="24" width="12" x="462" y="234" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="462" y="234" />
+<rect fill="#DEE6F1" height="24" width="12" x="450" y="234" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="450" y="234" />
+<rect fill="#ECF1E0" height="24" width="12" x="438" y="234" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="438" y="234" />
+<rect fill="#ECF1E0" height="24" width="12" x="426" y="234" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="12" x="426" y="234" />
+<rect fill="#ECF1E0" height="24" width="336" x="90" y="234" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="2" width="336" x="90" y="234" />
+<text class="register-name" x="80" y="246">Zd</text>
+<text class="register-number" x="10" y="246">(3)</text>
+<line marker-end="url(#arrowhead)" stroke="none" x1="372" x2="323.75" y1="114.5" y2="161" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="324" x2="311.75" y1="114.5" y2="161" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="276" x2="300.25" y1="114.5" y2="161" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="228" x2="288.25" y1="114.5" y2="161" />
+</svg>

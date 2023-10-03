@@ -1,0 +1,88 @@
+<html>
+<head><meta charset="UTF-8">
+<style>
+
+	td {
+		background-color: #FFFFFF;
+		font-size: 9pt;
+	}
+
+	table {
+		background-color: #ccc;
+	}
+
+	td.empty {
+		background-color: #ddd;
+	}
+	th {
+		background-color: #eee;
+		min-width: 48px;
+	}
+
+    body {
+        font-family: sans-serif;
+        font-size: 10pt;
+    }
+    a {
+    	color: #000;
+    	white-space: nowrap;
+    }
+    .intrinsics {
+    	color: #6778ED;
+    }
+
+    .group:not(:first-child) {
+    	/*border-top: 1px solid #ccc;*/
+	    margin-top: 2px;
+	}
+
+	img, canvas {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	canvas {
+	  image-rendering: pixelated;
+	  image-rendering: -moz-crisp-edges;
+	  image-rendering: crisp-edges;
+	}
+</style>
+<script>
+function useLowDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		img.src = img.src.replace('/svg/', '/lowdpi/');
+	})
+	document.getElementById('highdpi').style.display = 'inline';
+	document.getElementById('lowdpi').style.display = 'none';
+}
+function switchToLowDPI() {
+	useLowDPI();
+	localStorage.setItem("dpi", "low");
+}
+function useHighDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		if (img.src !== img.src.replace('/lowdpi/', '/svg/'))
+			img.src = img.src.replace('/lowdpi/', '/svg/');
+	})
+	document.getElementById('highdpi').style.display = 'none';
+	document.getElementById('lowdpi').style.display = 'inline';
+}
+function switchToHighDPI() {
+	useHighDPI();
+	localStorage.setItem("dpi", "high");
+}
+</script>
+<title>CLASTB (vectors): Conditionally extract last element to vector register</title>
+</head>
+<body>
+<a href="../index.html">SVE Instruction List</a> by <a href="https://mastodon.social/@dougall">Dougall Johnson</a>
+<div style="float:right"><a href="https://docsmirror.github.io/A64/2023-06/clastb_z_p_zz.html">See "CLASTB (vectors)" in the exploration tools</a></div><h1>CLASTB (vectors): Conditionally extract last element to vector register</h1><div><span style="font-family: monospace; margin-right: 20px;">CLASTB Zdn.H, Pg, Zdn.H, Zm.H</span> <span style="margin-left: 20px">(SVE</span> <span style="margin-left: 20px">(SME</span></div><div class="intrinsics"><div>svbfloat16_t svclastb[_bf16](svbool_t pg, svbfloat16_t fallback, svbfloat16_t data)</div><div>svfloat16_t svclastb[_f16](svbool_t pg, svfloat16_t fallback, svfloat16_t data)</div><div>svint16_t svclastb[_s16](svbool_t pg, svint16_t fallback, svint16_t data)</div><div>svuint16_t svclastb[_u16](svbool_t pg, svuint16_t fallback, svuint16_t data)</div></div><h2>128-bit SVE</h2><img src="../svg/clastb_Pg_Zm_Zdn_Zdn_16_128.svg" width="486" height="219"><div style="padding-left: 90px; max-width: 800px;">Find the last (leftmost) 16-bit element from (2) where the corresponding predicate bit in (1) is non-zero, and broadcast it to all lanes of (4). If there are no such elements, preserve the value from (3).</div><h2>256-bit SVE</h2><img src="../svg/clastb_Pg_Zm_Zdn_Zdn_16_256.svg" width="870" height="219"><div style="padding-left: 90px; max-width: 800px;">Find the last (leftmost) 16-bit element from (2) where the corresponding predicate bit in (1) is non-zero, and broadcast it to all lanes of (4). If there are no such elements, preserve the value from (3).</div><h2>512-bit SVE</h2><img src="../svg/clastb_Pg_Zm_Zdn_Zdn_16_512.svg" width="1638" height="219"><div style="padding-left: 90px; max-width: 800px;">Find the last (leftmost) 16-bit element from (2) where the corresponding predicate bit in (1) is non-zero, and broadcast it to all lanes of (4). If there are no such elements, preserve the value from (3).</div><hr><details><summary>Larger sizes</summary><h2>1024-bit SVE</h2><img src="../svg/clastb_Pg_Zm_Zdn_Zdn_16_1024.svg" width="3174" height="219"><div style="padding-left: 90px; max-width: 800px;">Find the last (leftmost) 16-bit element from (2) where the corresponding predicate bit in (1) is non-zero, and broadcast it to all lanes of (4). If there are no such elements, preserve the value from (3).</div><h2>2048-bit SVE</h2><img src="../svg/clastb_Pg_Zm_Zdn_Zdn_16_2048.svg" width="6246" height="219"><div style="padding-left: 90px; max-width: 800px;">Find the last (leftmost) 16-bit element from (2) where the corresponding predicate bit in (1) is non-zero, and broadcast it to all lanes of (4). If there are no such elements, preserve the value from (3).</div></details><hr>
+<script>document.write('<a href="javascript:switchToHighDPI()" id="highdpi">Switch to High-DPI</a><a href="javascript:switchToLowDPI()" id="lowdpi">Switch to Low-DPI</a><br>');
+useHighDPI();
+if (localStorage.getItem('dpi') === "low") {
+	useLowDPI();
+}
+
+</script>
+<a href="https://github.com/dougallj/asil/issues">Report mistakes or give feedback</a><br>
+Inspired by and based on the <a href="https://www.officedaytime.com/simd512e/">x86/x64 SIMD Instruction List</a> by Daytime.

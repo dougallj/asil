@@ -1,0 +1,88 @@
+<html>
+<head><meta charset="UTF-8">
+<style>
+
+	td {
+		background-color: #FFFFFF;
+		font-size: 9pt;
+	}
+
+	table {
+		background-color: #ccc;
+	}
+
+	td.empty {
+		background-color: #ddd;
+	}
+	th {
+		background-color: #eee;
+		min-width: 48px;
+	}
+
+    body {
+        font-family: sans-serif;
+        font-size: 10pt;
+    }
+    a {
+    	color: #000;
+    	white-space: nowrap;
+    }
+    .intrinsics {
+    	color: #6778ED;
+    }
+
+    .group:not(:first-child) {
+    	/*border-top: 1px solid #ccc;*/
+	    margin-top: 2px;
+	}
+
+	img, canvas {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	canvas {
+	  image-rendering: pixelated;
+	  image-rendering: -moz-crisp-edges;
+	  image-rendering: crisp-edges;
+	}
+</style>
+<script>
+function useLowDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		img.src = img.src.replace('/svg/', '/lowdpi/');
+	})
+	document.getElementById('highdpi').style.display = 'inline';
+	document.getElementById('lowdpi').style.display = 'none';
+}
+function switchToLowDPI() {
+	useLowDPI();
+	localStorage.setItem("dpi", "low");
+}
+function useHighDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		if (img.src !== img.src.replace('/lowdpi/', '/svg/'))
+			img.src = img.src.replace('/lowdpi/', '/svg/');
+	})
+	document.getElementById('highdpi').style.display = 'none';
+	document.getElementById('lowdpi').style.display = 'inline';
+}
+function switchToHighDPI() {
+	useHighDPI();
+	localStorage.setItem("dpi", "high");
+}
+</script>
+<title>ST1H (scalar plus vector): Scatter store halfwords from a vector (vector index)</title>
+</head>
+<body>
+<a href="../index.html">SVE Instruction List</a> by <a href="https://mastodon.social/@dougall">Dougall Johnson</a>
+<div style="float:right"><a href="https://docsmirror.github.io/A64/2023-06/st1h_z_p_bz.html">See "ST1H (scalar plus vector)" in the exploration tools</a></div><h1>ST1H (scalar plus vector): Scatter store halfwords from a vector (vector index)</h1><div><span style="font-family: monospace; margin-right: 20px;">ST1H { Zt.D }, Pg, [Xn, Zm.D, LSL #1]</span> <span style="margin-left: 20px">(SVE+NS</span></div><div class="intrinsics"><div>void svst1h_scatter_[s64]index[_s64](svbool_t pg, int16_t *base, svint64_t indices, svint64_t data)</div><div>void svst1h_scatter_[s64]index[_u64](svbool_t pg, uint16_t *base, svint64_t indices, svuint64_t data)</div><div>void svst1h_scatter_[u64]index[_s64](svbool_t pg, int16_t *base, svuint64_t indices, svint64_t data)</div><div>void svst1h_scatter_[u64]index[_u64](svbool_t pg, uint16_t *base, svuint64_t indices, svuint64_t data)</div></div><h2>128-bit SVE</h2><img src="../svg/st1h_lsl_Pg_Zt_Zm_64_128.svg" width="498" height="279"><div style="padding-left: 90px; max-width: 800px;"><!-- TODO -->See <a href="https://docsmirror.github.io/A64/2023-06/st1h_z_p_bz.html">the documentation</a> for more information.</div><h2>256-bit SVE</h2><img src="../svg/st1h_lsl_Pg_Zt_Zm_64_256.svg" width="882" height="351"><div style="padding-left: 90px; max-width: 800px;"><!-- TODO -->See <a href="https://docsmirror.github.io/A64/2023-06/st1h_z_p_bz.html">the documentation</a> for more information.</div><h2>512-bit SVE</h2><img src="../svg/st1h_lsl_Pg_Zt_Zm_64_512.svg" width="1650" height="495"><div style="padding-left: 90px; max-width: 800px;"><!-- TODO -->See <a href="https://docsmirror.github.io/A64/2023-06/st1h_z_p_bz.html">the documentation</a> for more information.</div><hr><details><summary>Larger sizes</summary><h2>1024-bit SVE</h2><img src="../svg/st1h_lsl_Pg_Zt_Zm_64_1024.svg" width="3186" height="783"><div style="padding-left: 90px; max-width: 800px;"><!-- TODO -->See <a href="https://docsmirror.github.io/A64/2023-06/st1h_z_p_bz.html">the documentation</a> for more information.</div><h2>2048-bit SVE</h2><img src="../svg/st1h_lsl_Pg_Zt_Zm_64_2048.svg" width="6258" height="783"><div style="padding-left: 90px; max-width: 800px;"><!-- TODO -->See <a href="https://docsmirror.github.io/A64/2023-06/st1h_z_p_bz.html">the documentation</a> for more information.</div></details><hr>
+<script>document.write('<a href="javascript:switchToHighDPI()" id="highdpi">Switch to High-DPI</a><a href="javascript:switchToLowDPI()" id="lowdpi">Switch to Low-DPI</a><br>');
+useHighDPI();
+if (localStorage.getItem('dpi') === "low") {
+	useLowDPI();
+}
+
+</script>
+<a href="https://github.com/dougallj/asil/issues">Report mistakes or give feedback</a><br>
+Inspired by and based on the <a href="https://www.officedaytime.com/simd512e/">x86/x64 SIMD Instruction List</a> by Daytime.

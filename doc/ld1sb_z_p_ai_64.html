@@ -1,0 +1,88 @@
+<html>
+<head><meta charset="UTF-8">
+<style>
+
+	td {
+		background-color: #FFFFFF;
+		font-size: 9pt;
+	}
+
+	table {
+		background-color: #ccc;
+	}
+
+	td.empty {
+		background-color: #ddd;
+	}
+	th {
+		background-color: #eee;
+		min-width: 48px;
+	}
+
+    body {
+        font-family: sans-serif;
+        font-size: 10pt;
+    }
+    a {
+    	color: #000;
+    	white-space: nowrap;
+    }
+    .intrinsics {
+    	color: #6778ED;
+    }
+
+    .group:not(:first-child) {
+    	/*border-top: 1px solid #ccc;*/
+	    margin-top: 2px;
+	}
+
+	img, canvas {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	canvas {
+	  image-rendering: pixelated;
+	  image-rendering: -moz-crisp-edges;
+	  image-rendering: crisp-edges;
+	}
+</style>
+<script>
+function useLowDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		img.src = img.src.replace('/svg/', '/lowdpi/');
+	})
+	document.getElementById('highdpi').style.display = 'inline';
+	document.getElementById('lowdpi').style.display = 'none';
+}
+function switchToLowDPI() {
+	useLowDPI();
+	localStorage.setItem("dpi", "low");
+}
+function useHighDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		if (img.src !== img.src.replace('/lowdpi/', '/svg/'))
+			img.src = img.src.replace('/lowdpi/', '/svg/');
+	})
+	document.getElementById('highdpi').style.display = 'none';
+	document.getElementById('lowdpi').style.display = 'inline';
+}
+function switchToHighDPI() {
+	useHighDPI();
+	localStorage.setItem("dpi", "high");
+}
+</script>
+<title>LD1SB (vector plus immediate): Gather load signed bytes to vector (immediate index)</title>
+</head>
+<body>
+<a href="../index.html">SVE Instruction List</a> by <a href="https://mastodon.social/@dougall">Dougall Johnson</a>
+<div style="float:right"><a href="https://docsmirror.github.io/A64/2023-06/ld1sb_z_p_ai.html">See "LD1SB (vector plus immediate)" in the exploration tools</a></div><h1>LD1SB (vector plus immediate): Gather load signed bytes to vector (immediate index)</h1><div><span style="font-family: monospace; margin-right: 20px;">LD1SB { Zt.D }, Pg/Z, [Zn.D, #imm]</span> <span style="margin-left: 20px">(SVE+NS</span></div><div class="intrinsics"><div>svint64_t svld1sb_gather[_u64base]_offset_s64(svbool_t pg, svuint64_t bases, int64_t offset)</div><div>svuint64_t svld1sb_gather[_u64base]_offset_u64(svbool_t pg, svuint64_t bases, int64_t offset)</div></div><h2>128-bit SVE</h2><img src="../svg/ld1sb_imm_Pg_Zn_Zt_64_128.svg" width="498" height="291"><div style="padding-left: 90px; max-width: 800px;">Gather (load) and sign extend 8-bit values into the 64-bit elements of (3), from the corresponding 64-bit address from (2), plus an immediate. If the predicate bit from (1) corresponding to an element in (3) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero. The immediate offset is limited to <span style="white-space: nowrap;">0 &le; imm &lt; 32.</span></div><h2>256-bit SVE</h2><img src="../svg/ld1sb_imm_Pg_Zn_Zt_64_256.svg" width="882" height="363"><div style="padding-left: 90px; max-width: 800px;">Gather (load) and sign extend 8-bit values into the 64-bit elements of (3), from the corresponding 64-bit address from (2), plus an immediate. If the predicate bit from (1) corresponding to an element in (3) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero. The immediate offset is limited to <span style="white-space: nowrap;">0 &le; imm &lt; 32.</span></div><h2>512-bit SVE</h2><img src="../svg/ld1sb_imm_Pg_Zn_Zt_64_512.svg" width="1650" height="507"><div style="padding-left: 90px; max-width: 800px;">Gather (load) and sign extend 8-bit values into the 64-bit elements of (3), from the corresponding 64-bit address from (2), plus an immediate. If the predicate bit from (1) corresponding to an element in (3) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero. The immediate offset is limited to <span style="white-space: nowrap;">0 &le; imm &lt; 32.</span></div><hr><details><summary>Larger sizes</summary><h2>1024-bit SVE</h2><img src="../svg/ld1sb_imm_Pg_Zn_Zt_64_1024.svg" width="3186" height="795"><div style="padding-left: 90px; max-width: 800px;">Gather (load) and sign extend 8-bit values into the 64-bit elements of (3), from the corresponding 64-bit address from (2), plus an immediate. If the predicate bit from (1) corresponding to an element in (3) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero. The immediate offset is limited to <span style="white-space: nowrap;">0 &le; imm &lt; 32.</span></div><h2>2048-bit SVE</h2><img src="../svg/ld1sb_imm_Pg_Zn_Zt_64_2048.svg" width="6258" height="795"><div style="padding-left: 90px; max-width: 800px;">Gather (load) and sign extend 8-bit values into the 64-bit elements of (3), from the corresponding 64-bit address from (2), plus an immediate. If the predicate bit from (1) corresponding to an element in (3) is zero, that load is skipped, and cannot cause a fault, and the element is set to zero. The immediate offset is limited to <span style="white-space: nowrap;">0 &le; imm &lt; 32.</span></div></details><hr>
+<script>document.write('<a href="javascript:switchToHighDPI()" id="highdpi">Switch to High-DPI</a><a href="javascript:switchToLowDPI()" id="lowdpi">Switch to Low-DPI</a><br>');
+useHighDPI();
+if (localStorage.getItem('dpi') === "low") {
+	useLowDPI();
+}
+
+</script>
+<a href="https://github.com/dougallj/asil/issues">Report mistakes or give feedback</a><br>
+Inspired by and based on the <a href="https://www.officedaytime.com/simd512e/">x86/x64 SIMD Instruction List</a> by Daytime.

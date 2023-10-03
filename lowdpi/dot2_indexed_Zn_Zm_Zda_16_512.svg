@@ -1,0 +1,384 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1638 243">
+<style>
+.label { font: 14px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-left { font: 12px Helvetica; dominant-baseline: middle; }
+.title-right { font: 12px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.title-intrinsic { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #6778ED; }
+.title { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-unused { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #AAA; }
+.register-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; font-style: italic; }
+.memory-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.register-number { font: 14px Helvetica; dominant-baseline: middle; text-anchor: start; }
+.intrinsic-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; fill: #6778ED; }
+.intrinsic-color { fill: #6778ED; }
+.small-label { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-10px { font: 10px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.smaller-label { font: 9px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-6px { font: 6px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-7px { font: 7px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.unused { fill: #AAA; }
+.dim { fill: #888; }
+</style>
+<defs>
+<marker id="arrowhead" markerWidth="10.75" markerHeight="24.5" refX="9.0" refY="6.125" orient="auto">
+<polyline points="0.5 0.5, 8.75 6.125, 0.5 11.75" stroke="#567DB6" stroke-width="1" fill="none"/>
+</marker>
+</defs>
+<line stroke="#000" stroke-width="3" x1="474.5" x2="474.5" y1="11" y2="242" />
+<line stroke="#000" stroke-width="3" x1="858.5" x2="858.5" y1="11" y2="242" />
+<line stroke="#000" stroke-width="3" x1="1242.5" x2="1242.5" y1="11" y2="242" />
+<text class="title-left" x="90.5" y="9.5">upper</text>
+<text class="title-right" x="1626.5" y="9.5">lower</text>
+<text class="title-intrinsic" x="1386.5" y="8.5">imm</text>
+<text class="title-intrinsic" x="1002.5" y="8.5">imm</text>
+<text class="title-intrinsic" x="618.5" y="8.5">imm</text>
+<text class="title-intrinsic" x="234.5" y="8.5">imm</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="1530.5" y="18.5" />
+<text class="label unused" x="1578.5" y="31.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="1434.5" y="18.5" />
+<text class="label unused" x="1482.5" y="31.5">1</text>
+<rect fill="#DEE6F1" height="24" width="48" x="1386.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1386.5" y="18.5" />
+<text class="label" x="1410.5" y="31.5">A</text>
+<rect fill="#DEE6F1" height="24" width="48" x="1338.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1338.5" y="18.5" />
+<text class="label" x="1362.5" y="31.5">C</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="1242.5" y="18.5" />
+<text class="label unused" x="1290.5" y="31.5">3</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="1146.5" y="18.5" />
+<text class="label unused" x="1194.5" y="31.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="1050.5" y="18.5" />
+<text class="label unused" x="1098.5" y="31.5">1</text>
+<rect fill="#DEE6F1" height="24" width="48" x="1002.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1002.5" y="18.5" />
+<text class="label" x="1026.5" y="31.5">A</text>
+<rect fill="#DEE6F1" height="24" width="48" x="954.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="954.5" y="18.5" />
+<text class="label" x="978.5" y="31.5">C</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="858.5" y="18.5" />
+<text class="label unused" x="906.5" y="31.5">3</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="762.5" y="18.5" />
+<text class="label unused" x="810.5" y="31.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="666.5" y="18.5" />
+<text class="label unused" x="714.5" y="31.5">1</text>
+<rect fill="#DEE6F1" height="24" width="48" x="618.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="18.5" />
+<text class="label" x="642.5" y="31.5">A</text>
+<rect fill="#DEE6F1" height="24" width="48" x="570.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="18.5" />
+<text class="label" x="594.5" y="31.5">C</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="474.5" y="18.5" />
+<text class="label unused" x="522.5" y="31.5">3</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="378.5" y="18.5" />
+<text class="label unused" x="426.5" y="31.5">0</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="282.5" y="18.5" />
+<text class="label unused" x="330.5" y="31.5">1</text>
+<rect fill="#DEE6F1" height="24" width="48" x="234.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="18.5" />
+<text class="label" x="258.5" y="31.5">A</text>
+<rect fill="#DEE6F1" height="24" width="48" x="186.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="18.5" />
+<text class="label" x="210.5" y="31.5">C</text>
+<rect fill="none" height="24" stroke="#405C86" stroke-dasharray="3 1" stroke-dashoffset="1.5" stroke-width="1" width="96" x="90.5" y="18.5" />
+<text class="label unused" x="138.5" y="31.5">3</text>
+<text class="register-name" x="80.5" y="30.5">Zm</text>
+<text class="register-number" x="10" y="30.5">(1)</text>
+<rect fill="#EEDDDB" height="24" width="48" x="1578.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1578.5" y="90.5" />
+<text class="label" x="1602.5" y="103.5">B</text>
+<rect fill="#EEDDDB" height="24" width="48" x="1530.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1530.5" y="90.5" />
+<text class="label" x="1554.5" y="103.5">D</text>
+<rect fill="#ECF1E0" height="24" width="48" x="1482.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1482.5" y="90.5" />
+<text class="label" x="1506.5" y="103.5">F</text>
+<rect fill="#ECF1E0" height="24" width="48" x="1434.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1434.5" y="90.5" />
+<text class="label" x="1458.5" y="103.5">H</text>
+<rect fill="#E5E0EB" height="24" width="48" x="1386.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1386.5" y="90.5" />
+<text class="label" x="1410.5" y="103.5">B</text>
+<rect fill="#E5E0EB" height="24" width="48" x="1338.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1338.5" y="90.5" />
+<text class="label" x="1362.5" y="103.5">D</text>
+<rect fill="#FAEBDC" height="24" width="48" x="1290.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1290.5" y="90.5" />
+<text class="label" x="1314.5" y="103.5">F</text>
+<rect fill="#FAEBDC" height="24" width="48" x="1242.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1242.5" y="90.5" />
+<text class="label" x="1266.5" y="103.5">H</text>
+<rect fill="#EEDDDB" height="24" width="48" x="1194.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1194.5" y="90.5" />
+<text class="label" x="1218.5" y="103.5">B</text>
+<rect fill="#EEDDDB" height="24" width="48" x="1146.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1146.5" y="90.5" />
+<text class="label" x="1170.5" y="103.5">D</text>
+<rect fill="#ECF1E0" height="24" width="48" x="1098.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1098.5" y="90.5" />
+<text class="label" x="1122.5" y="103.5">F</text>
+<rect fill="#ECF1E0" height="24" width="48" x="1050.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1050.5" y="90.5" />
+<text class="label" x="1074.5" y="103.5">H</text>
+<rect fill="#E5E0EB" height="24" width="48" x="1002.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="1002.5" y="90.5" />
+<text class="label" x="1026.5" y="103.5">B</text>
+<rect fill="#E5E0EB" height="24" width="48" x="954.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="954.5" y="90.5" />
+<text class="label" x="978.5" y="103.5">D</text>
+<rect fill="#FAEBDC" height="24" width="48" x="906.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="906.5" y="90.5" />
+<text class="label" x="930.5" y="103.5">F</text>
+<rect fill="#FAEBDC" height="24" width="48" x="858.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="858.5" y="90.5" />
+<text class="label" x="882.5" y="103.5">H</text>
+<rect fill="#EEDDDB" height="24" width="48" x="810.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="810.5" y="90.5" />
+<text class="label" x="834.5" y="103.5">B</text>
+<rect fill="#EEDDDB" height="24" width="48" x="762.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="762.5" y="90.5" />
+<text class="label" x="786.5" y="103.5">D</text>
+<rect fill="#ECF1E0" height="24" width="48" x="714.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="714.5" y="90.5" />
+<text class="label" x="738.5" y="103.5">F</text>
+<rect fill="#ECF1E0" height="24" width="48" x="666.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="666.5" y="90.5" />
+<text class="label" x="690.5" y="103.5">H</text>
+<rect fill="#E5E0EB" height="24" width="48" x="618.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="618.5" y="90.5" />
+<text class="label" x="642.5" y="103.5">B</text>
+<rect fill="#E5E0EB" height="24" width="48" x="570.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="570.5" y="90.5" />
+<text class="label" x="594.5" y="103.5">D</text>
+<rect fill="#FAEBDC" height="24" width="48" x="522.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="522.5" y="90.5" />
+<text class="label" x="546.5" y="103.5">F</text>
+<rect fill="#FAEBDC" height="24" width="48" x="474.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="474.5" y="90.5" />
+<text class="label" x="498.5" y="103.5">H</text>
+<rect fill="#EEDDDB" height="24" width="48" x="426.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="426.5" y="90.5" />
+<text class="label" x="450.5" y="103.5">B</text>
+<rect fill="#EEDDDB" height="24" width="48" x="378.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="378.5" y="90.5" />
+<text class="label" x="402.5" y="103.5">D</text>
+<rect fill="#ECF1E0" height="24" width="48" x="330.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="330.5" y="90.5" />
+<text class="label" x="354.5" y="103.5">F</text>
+<rect fill="#ECF1E0" height="24" width="48" x="282.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="282.5" y="90.5" />
+<text class="label" x="306.5" y="103.5">H</text>
+<rect fill="#E5E0EB" height="24" width="48" x="234.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="234.5" y="90.5" />
+<text class="label" x="258.5" y="103.5">B</text>
+<rect fill="#E5E0EB" height="24" width="48" x="186.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="186.5" y="90.5" />
+<text class="label" x="210.5" y="103.5">D</text>
+<rect fill="#FAEBDC" height="24" width="48" x="138.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="138.5" y="90.5" />
+<text class="label" x="162.5" y="103.5">F</text>
+<rect fill="#FAEBDC" height="24" width="48" x="90.5" y="90.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="48" x="90.5" y="90.5" />
+<text class="label" x="114.5" y="103.5">H</text>
+<text class="register-name" x="80.5" y="102.5">Zn</text>
+<text class="register-number" x="10" y="102.5">(2)</text>
+<rect fill="#EEDDDB" height="24" width="96" x="1530.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1530.5" y="138.5" />
+<text class="label" x="1578.5" y="151.5">E</text>
+<rect fill="#ECF1E0" height="24" width="96" x="1434.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1434.5" y="138.5" />
+<text class="label" x="1482.5" y="151.5">E</text>
+<rect fill="#E5E0EB" height="24" width="96" x="1338.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1338.5" y="138.5" />
+<text class="label" x="1386.5" y="151.5">E</text>
+<rect fill="#FAEBDC" height="24" width="96" x="1242.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1242.5" y="138.5" />
+<text class="label" x="1290.5" y="151.5">E</text>
+<rect fill="#EEDDDB" height="24" width="96" x="1146.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1146.5" y="138.5" />
+<text class="label" x="1194.5" y="151.5">E</text>
+<rect fill="#ECF1E0" height="24" width="96" x="1050.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1050.5" y="138.5" />
+<text class="label" x="1098.5" y="151.5">E</text>
+<rect fill="#E5E0EB" height="24" width="96" x="954.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="954.5" y="138.5" />
+<text class="label" x="1002.5" y="151.5">E</text>
+<rect fill="#FAEBDC" height="24" width="96" x="858.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="858.5" y="138.5" />
+<text class="label" x="906.5" y="151.5">E</text>
+<rect fill="#EEDDDB" height="24" width="96" x="762.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="762.5" y="138.5" />
+<text class="label" x="810.5" y="151.5">E</text>
+<rect fill="#ECF1E0" height="24" width="96" x="666.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="666.5" y="138.5" />
+<text class="label" x="714.5" y="151.5">E</text>
+<rect fill="#E5E0EB" height="24" width="96" x="570.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="570.5" y="138.5" />
+<text class="label" x="618.5" y="151.5">E</text>
+<rect fill="#FAEBDC" height="24" width="96" x="474.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="474.5" y="138.5" />
+<text class="label" x="522.5" y="151.5">E</text>
+<rect fill="#EEDDDB" height="24" width="96" x="378.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="378.5" y="138.5" />
+<text class="label" x="426.5" y="151.5">E</text>
+<rect fill="#ECF1E0" height="24" width="96" x="282.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="282.5" y="138.5" />
+<text class="label" x="330.5" y="151.5">E</text>
+<rect fill="#E5E0EB" height="24" width="96" x="186.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="186.5" y="138.5" />
+<text class="label" x="234.5" y="151.5">E</text>
+<rect fill="#FAEBDC" height="24" width="96" x="90.5" y="138.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="90.5" y="138.5" />
+<text class="label" x="138.5" y="151.5">E</text>
+<text class="register-name" x="80.5" y="150.5">Zda</text>
+<text class="register-number" x="10" y="150.5">(3)</text>
+<rect fill="#EEDDDB" height="24" width="96" x="1530.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1530.5" y="210.5" />
+<text class="label" x="1578.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#ECF1E0" height="24" width="96" x="1434.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1434.5" y="210.5" />
+<text class="label" x="1482.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#E5E0EB" height="24" width="96" x="1338.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1338.5" y="210.5" />
+<text class="label" x="1386.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#FAEBDC" height="24" width="96" x="1242.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1242.5" y="210.5" />
+<text class="label" x="1290.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#EEDDDB" height="24" width="96" x="1146.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1146.5" y="210.5" />
+<text class="label" x="1194.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#ECF1E0" height="24" width="96" x="1050.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="1050.5" y="210.5" />
+<text class="label" x="1098.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#E5E0EB" height="24" width="96" x="954.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="954.5" y="210.5" />
+<text class="label" x="1002.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#FAEBDC" height="24" width="96" x="858.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="858.5" y="210.5" />
+<text class="label" x="906.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#EEDDDB" height="24" width="96" x="762.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="762.5" y="210.5" />
+<text class="label" x="810.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#ECF1E0" height="24" width="96" x="666.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="666.5" y="210.5" />
+<text class="label" x="714.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#E5E0EB" height="24" width="96" x="570.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="570.5" y="210.5" />
+<text class="label" x="618.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#FAEBDC" height="24" width="96" x="474.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="474.5" y="210.5" />
+<text class="label" x="522.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#EEDDDB" height="24" width="96" x="378.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="378.5" y="210.5" />
+<text class="label" x="426.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#ECF1E0" height="24" width="96" x="282.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="282.5" y="210.5" />
+<text class="label" x="330.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#E5E0EB" height="24" width="96" x="186.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="186.5" y="210.5" />
+<text class="label" x="234.5" y="223.5">A*B+C*D+E</text>
+<rect fill="#FAEBDC" height="24" width="96" x="90.5" y="210.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="96" x="90.5" y="210.5" />
+<text class="label" x="138.5" y="223.5">A*B+C*D+E</text>
+<text class="register-name" x="80.5" y="222.5">Zda</text>
+<text class="register-number" x="10" y="222.5">(4)</text>
+<polyline fill="none" points="1341.5 43.5,1343.5 47.5,1385.5 47.5,1386.5 49.5,1386.5 53.5,1386.5 49.5,1387.5 47.5,1429.5 47.5,1431.5 43.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1533.5 89.5,1535.5 85.5,1577.5 85.5,1578.5 83.5,1578.5 79.5,1578.5 83.5,1579.5 85.5,1621.5 85.5,1623.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1386.5 52.5,1386.5 53.5,1578.5 79.5,1578.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1437.5 89.5,1439.5 85.5,1481.5 85.5,1482.5 83.5,1482.5 79.5,1482.5 83.5,1483.5 85.5,1525.5 85.5,1527.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1386.5 52.5,1386.5 53.5,1482.5 79.5,1482.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1341.5 89.5,1343.5 85.5,1385.5 85.5,1386.5 83.5,1386.5 79.5,1386.5 83.5,1387.5 85.5,1429.5 85.5,1431.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1386.5 52.5,1386.5 53.5,1386.5 79.5,1386.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1245.5 89.5,1247.5 85.5,1289.5 85.5,1290.5 83.5,1290.5 79.5,1290.5 83.5,1291.5 85.5,1333.5 85.5,1335.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1386.5 52.5,1386.5 53.5,1290.5 79.5,1290.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="957.5 43.5,959.5 47.5,1001.5 47.5,1002.5 49.5,1002.5 53.5,1002.5 49.5,1003.5 47.5,1045.5 47.5,1047.5 43.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1149.5 89.5,1151.5 85.5,1193.5 85.5,1194.5 83.5,1194.5 79.5,1194.5 83.5,1195.5 85.5,1237.5 85.5,1239.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1002.5 52.5,1002.5 53.5,1194.5 79.5,1194.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1053.5 89.5,1055.5 85.5,1097.5 85.5,1098.5 83.5,1098.5 79.5,1098.5 83.5,1099.5 85.5,1141.5 85.5,1143.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1002.5 52.5,1002.5 53.5,1098.5 79.5,1098.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="957.5 89.5,959.5 85.5,1001.5 85.5,1002.5 83.5,1002.5 79.5,1002.5 83.5,1003.5 85.5,1045.5 85.5,1047.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1002.5 52.5,1002.5 53.5,1002.5 79.5,1002.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="861.5 89.5,863.5 85.5,905.5 85.5,906.5 83.5,906.5 79.5,906.5 83.5,907.5 85.5,949.5 85.5,951.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="1002.5 52.5,1002.5 53.5,906.5 79.5,906.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="573.5 43.5,575.5 47.5,617.5 47.5,618.5 49.5,618.5 53.5,618.5 49.5,619.5 47.5,661.5 47.5,663.5 43.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="765.5 89.5,767.5 85.5,809.5 85.5,810.5 83.5,810.5 79.5,810.5 83.5,811.5 85.5,853.5 85.5,855.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="618.5 52.5,618.5 53.5,810.5 79.5,810.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="669.5 89.5,671.5 85.5,713.5 85.5,714.5 83.5,714.5 79.5,714.5 83.5,715.5 85.5,757.5 85.5,759.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="618.5 52.5,618.5 53.5,714.5 79.5,714.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="573.5 89.5,575.5 85.5,617.5 85.5,618.5 83.5,618.5 79.5,618.5 83.5,619.5 85.5,661.5 85.5,663.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="618.5 52.5,618.5 53.5,618.5 79.5,618.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="477.5 89.5,479.5 85.5,521.5 85.5,522.5 83.5,522.5 79.5,522.5 83.5,523.5 85.5,565.5 85.5,567.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="618.5 52.5,618.5 53.5,522.5 79.5,522.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="189.5 43.5,191.5 47.5,233.5 47.5,234.5 49.5,234.5 53.5,234.5 49.5,235.5 47.5,277.5 47.5,279.5 43.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="381.5 89.5,383.5 85.5,425.5 85.5,426.5 83.5,426.5 79.5,426.5 83.5,427.5 85.5,469.5 85.5,471.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="234.5 52.5,234.5 53.5,426.5 79.5,426.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="285.5 89.5,287.5 85.5,329.5 85.5,330.5 83.5,330.5 79.5,330.5 83.5,331.5 85.5,373.5 85.5,375.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="234.5 52.5,234.5 53.5,330.5 79.5,330.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="189.5 89.5,191.5 85.5,233.5 85.5,234.5 83.5,234.5 79.5,234.5 83.5,235.5 85.5,277.5 85.5,279.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="234.5 52.5,234.5 53.5,234.5 79.5,234.5 80.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="93.5 89.5,95.5 85.5,137.5 85.5,138.5 83.5,138.5 79.5,138.5 83.5,139.5 85.5,181.5 85.5,183.5 89.5" stroke="#567DB6" stroke-width="1" />
+<polyline fill="none" points="234.5 52.5,234.5 53.5,138.5 79.5,138.5 80.5" stroke="#567DB6" stroke-width="1" />
+<line stroke="#567DB6" stroke-width="1" x1="1578.5" x2="1578.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="1482.5" x2="1482.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="1386.5" x2="1386.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="1290.5" x2="1290.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="1194.5" x2="1194.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="1098.5" x2="1098.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="1002.5" x2="1002.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="906.5" x2="906.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="810.5" x2="810.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="714.5" x2="714.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="618.5" x2="618.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="522.5" x2="522.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="426.5" x2="426.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="330.5" x2="330.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="234.5" x2="234.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="138.5" x2="138.5" y1="163.5" y2="209" />
+<line stroke="#567DB6" stroke-width="1" x1="1602.5" x2="1602.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1554.5" x2="1554.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1506.5" x2="1506.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1458.5" x2="1458.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1410.5" x2="1410.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1362.5" x2="1362.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1314.5" x2="1314.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1266.5" x2="1266.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1218.5" x2="1218.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1170.5" x2="1170.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1122.5" x2="1122.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1074.5" x2="1074.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="1026.5" x2="1026.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="978.5" x2="978.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="930.5" x2="930.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="882.5" x2="882.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="834.5" x2="834.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="786.5" x2="786.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="738.5" x2="738.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="690.5" x2="690.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="642.5" x2="642.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="594.5" x2="594.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="546.5" x2="546.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="498.5" x2="498.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="450.5" x2="450.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="402.5" x2="402.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="354.5" x2="354.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="306.5" x2="306.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="258.5" x2="258.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="210.5" x2="210.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="162.5" x2="162.5" y1="115.5" y2="137" />
+<line stroke="#567DB6" stroke-width="1" x1="114.5" x2="114.5" y1="115.5" y2="137" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="1578.5" x2="1578.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="1482.5" x2="1482.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="1386.5" x2="1386.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="1290.5" x2="1290.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="1194.5" x2="1194.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="1098.5" x2="1098.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="1002.5" x2="1002.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="906.5" x2="906.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="810.5" x2="810.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="714.5" x2="714.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="618.5" x2="618.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="522.5" x2="522.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="426.5" x2="426.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="330.5" x2="330.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="234.5" x2="234.5" y1="163.5" y2="209" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="138.5" x2="138.5" y1="163.5" y2="209" />
+</svg>

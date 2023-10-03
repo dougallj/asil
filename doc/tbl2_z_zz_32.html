@@ -1,0 +1,88 @@
+<html>
+<head><meta charset="UTF-8">
+<style>
+
+	td {
+		background-color: #FFFFFF;
+		font-size: 9pt;
+	}
+
+	table {
+		background-color: #ccc;
+	}
+
+	td.empty {
+		background-color: #ddd;
+	}
+	th {
+		background-color: #eee;
+		min-width: 48px;
+	}
+
+    body {
+        font-family: sans-serif;
+        font-size: 10pt;
+    }
+    a {
+    	color: #000;
+    	white-space: nowrap;
+    }
+    .intrinsics {
+    	color: #6778ED;
+    }
+
+    .group:not(:first-child) {
+    	/*border-top: 1px solid #ccc;*/
+	    margin-top: 2px;
+	}
+
+	img, canvas {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	canvas {
+	  image-rendering: pixelated;
+	  image-rendering: -moz-crisp-edges;
+	  image-rendering: crisp-edges;
+	}
+</style>
+<script>
+function useLowDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		img.src = img.src.replace('/svg/', '/lowdpi/');
+	})
+	document.getElementById('highdpi').style.display = 'inline';
+	document.getElementById('lowdpi').style.display = 'none';
+}
+function switchToLowDPI() {
+	useLowDPI();
+	localStorage.setItem("dpi", "low");
+}
+function useHighDPI() {
+	Array.prototype.forEach.call(document.getElementsByTagName('img'), (img) => {
+		if (img.src !== img.src.replace('/lowdpi/', '/svg/'))
+			img.src = img.src.replace('/lowdpi/', '/svg/');
+	})
+	document.getElementById('highdpi').style.display = 'none';
+	document.getElementById('lowdpi').style.display = 'inline';
+}
+function switchToHighDPI() {
+	useHighDPI();
+	localStorage.setItem("dpi", "high");
+}
+</script>
+<title>TBL: Programmable table lookup in one or two vector table (zeroing)</title>
+</head>
+<body>
+<a href="../index.html">SVE Instruction List</a> by <a href="https://mastodon.social/@dougall">Dougall Johnson</a>
+<div style="float:right"><a href="https://docsmirror.github.io/A64/2023-06/tbl_z_zz.html">See "TBL" in the exploration tools</a></div><h1>TBL: Programmable table lookup in one or two vector table (zeroing)</h1><div><span style="font-family: monospace; margin-right: 20px;">TBL Zd.S, { Zn1.S, Zn2.S }, Zm.S</span> <span style="margin-left: 20px">(SVE2</span> <span style="margin-left: 20px">(SME</span></div><div class="intrinsics"><div>svfloat32_t svtbl2[_f32](svfloat32x2_t data, svuint32_t indices)</div><div>svint32_t svtbl2[_s32](svint32x2_t data, svuint32_t indices)</div><div>svuint32_t svtbl2[_u32](svuint32x2_t data, svuint32_t indices)</div></div><h2>128-bit SVE</h2><img src="../svg/tbl2_Zn1_Zn2_Zm_Zd_32_128.svg" width="940" height="195"><div style="padding-left: 90px; max-width: 800px;">For each 32-bit index from (2), if <span style="white-space: nowrap;">0 &le; index &lt; 8,</span> set (3) to the 32-bit element at that index in the two-register table (1), otherwise set (3) to zero.</div><h2>256-bit SVE</h2><img src="../svg/tbl2_Zn1_Zn2_Zm_Zd_32_256.svg" width="1708" height="195"><div style="padding-left: 90px; max-width: 800px;">For each 32-bit index from (2), if <span style="white-space: nowrap;">0 &le; index &lt; 16,</span> set (3) to the 32-bit element at that index in the two-register table (1), otherwise set (3) to zero.</div><h2>512-bit SVE</h2><img src="../svg/tbl2_Zn1_Zn2_Zm_Zd_32_512.svg" width="3244" height="243"><div style="padding-left: 90px; max-width: 800px;">For each 32-bit index from (2), if <span style="white-space: nowrap;">0 &le; index &lt; 32,</span> set (3) to the 32-bit element at that index in the two-register table (1), otherwise set (3) to zero.</div><hr><details><summary>Larger sizes</summary><h2>1024-bit SVE</h2><img src="../svg/tbl2_Zn1_Zn2_Zm_Zd_32_1024.svg" width="6316" height="243"><div style="padding-left: 90px; max-width: 800px;">For each 32-bit index from (2), if <span style="white-space: nowrap;">0 &le; index &lt; 64,</span> set (3) to the 32-bit element at that index in the two-register table (1), otherwise set (3) to zero.</div><h2>2048-bit SVE</h2><img src="../svg/tbl2_Zn1_Zn2_Zm_Zd_32_2048.svg" width="12460" height="243"><div style="padding-left: 90px; max-width: 800px;">For each 32-bit index from (2), if <span style="white-space: nowrap;">0 &le; index &lt; 128,</span> set (3) to the 32-bit element at that index in the two-register table (1), otherwise set (3) to zero.</div></details><hr>
+<script>document.write('<a href="javascript:switchToHighDPI()" id="highdpi">Switch to High-DPI</a><a href="javascript:switchToLowDPI()" id="lowdpi">Switch to Low-DPI</a><br>');
+useHighDPI();
+if (localStorage.getItem('dpi') === "low") {
+	useLowDPI();
+}
+
+</script>
+<a href="https://github.com/dougallj/asil/issues">Report mistakes or give feedback</a><br>
+Inspired by and based on the <a href="https://www.officedaytime.com/simd512e/">x86/x64 SIMD Instruction List</a> by Daytime.

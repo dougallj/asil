@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486 207">
+<style>
+.label { font: 14px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-left { font: 12px Helvetica; dominant-baseline: middle; }
+.title-right { font: 12px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.title-intrinsic { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #6778ED; }
+.title { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.title-unused { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; fill: #AAA; }
+.register-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; font-style: italic; }
+.memory-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; }
+.register-number { font: 14px Helvetica; dominant-baseline: middle; text-anchor: start; }
+.intrinsic-name { font: 14px Helvetica; dominant-baseline: middle; text-anchor: end; fill: #6778ED; }
+.intrinsic-color { fill: #6778ED; }
+.small-label { font: 12px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-10px { font: 10px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.smaller-label { font: 9px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-6px { font: 6px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.label-7px { font: 7px Helvetica; dominant-baseline: middle; text-anchor: middle; }
+.unused { fill: #AAA; }
+.dim { fill: #888; }
+</style>
+<defs>
+<marker id="arrowhead" markerWidth="10.75" markerHeight="24.5" refX="9.0" refY="6.125" orient="auto">
+<polyline points="0.5 0.5, 8.75 6.125, 0.5 11.75" stroke="#567DB6" stroke-width="1" fill="none"/>
+</marker>
+</defs>
+<text class="title-left" x="90.5" y="9.5">upper</text>
+<text class="title-right" x="474.5" y="9.5">lower</text>
+<rect fill="#DEE6F1" height="24" width="384" x="90.5" y="18.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="384" x="90.5" y="18.5" />
+<text class="small-label intrinsic-color" x="282.5" y="31.5">base[0]</text>
+<text class="register-name" x="80.5" y="30.5">[mem]</text>
+<text class="intrinsic-name" x="80.5" y="42.5">*base</text>
+<text class="register-number" x="10" y="30.5">(1)</text>
+<rect fill="#EEDDDB" height="24" width="384" x="90.5" y="54.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="384" x="90.5" y="54.5" />
+<text class="small-label intrinsic-color" x="282.5" y="67.5">base[1]</text>
+<rect fill="#DEE6F1" height="24" width="384" x="90.5" y="126.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="384" x="90.5" y="126.5" />
+<text class="small-label intrinsic-color" x="282.5" y="139.5">base[0]</text>
+<text class="register-name" x="80.5" y="138.5">Zt1</text>
+<text class="intrinsic-name" x="80.5" y="150.5">ret[0]</text>
+<text class="register-number" x="10" y="138.5">(2)</text>
+<rect fill="#EEDDDB" height="24" width="384" x="90.5" y="174.5" />
+<rect fill="none" height="24" stroke="#405C86" stroke-width="3" width="384" x="90.5" y="174.5" />
+<text class="small-label intrinsic-color" x="282.5" y="187.5">base[1]</text>
+<text class="register-name" x="80.5" y="186.5">Zt2</text>
+<text class="intrinsic-name" x="80.5" y="198.5">ret[1]</text>
+<text class="register-number" x="10" y="186.5">(3)</text>
+<line stroke="#567DB6" stroke-width="1" x1="302.5" x2="302.5" y1="43.5" y2="125" />
+<line stroke="#567DB6" stroke-width="1" x1="292.5" x2="292.5" y1="79.5" y2="173" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="302.5" x2="302.5" y1="43.5" y2="125" />
+<line marker-end="url(#arrowhead)" stroke="none" x1="292.5" x2="292.5" y1="79.5" y2="173" />
+</svg>
