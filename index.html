@@ -1,128 +1,13 @@
-<head><title>A64 SIMD Instruction List: SVE Instructions</title><style>
-		.l {
-			display: none;
-		}
-
-		table {
-			margin-bottom: 35px;
-			border-spacing: 0px;
-		}
-
-		.t td {
-			background-color: #FFFFFF;
-			font-size: 9pt;
-		}
-
-		.t td, .t th, .t {
-			border: 1px solid #ccc;
-		}
-
-		table.t {
-			background-color: #ccc;
-		}
-
-		table.t thead {
-			z-index: 10;
-		}
-
-		.group {
-			font-size: 10pt;
-		}
-
-		.t td.empty {
-			background-color: #ddd;
-		}
-		.t th {
-			background-color: #eee;
-			min-width: 48px;
-		}
-
-		.t thead {
-			top: 0;
-			position: sticky;
-		}
-
-		/*
-		doesn't play nice with rowspan
-		.t tbody th {
-			left: 0;
-			position: sticky;
-			z-index: 20;
-		}
-		*/
-
-	    body {
-	        font-family: sans-serif;
-	        font-size: 10pt;
-	    }
-	    .insnheading {
-	    	white-space: nowrap;
-	    }
-	    table a {
-	    	color: #000;
-	    }
-	    .intrinsics {
-	    	color: #6778ED;
-	    }
-	    .short-intrinsics {
-	    	color: #6778ED;
-	    }
-
-	    .group:not(:first-child) {
-	    	/*border-top: 1px solid #ccc;*/
-		    margin-top: 2px;
-		}
-
-		.unavailable {
-			opacity: 40%;
-		}
-
-		.target th {
-			padding-right: 20px;
-			text-align: left;
-		}
-
-		.target td {
-			padding-right: 20px;
-			vertical-align: top;
-		}
-
-		.target button {
-			margin-bottom: 4px;
-		}
-
-		.left-column {
-			width: 170px;
-		}
-
-		#header a {
-			color: #000;
-		}
-	</style><script>
-	function switchToLong() {
-		Array.prototype.forEach.call(document.getElementsByClassName('l'), (e) => {
-			e.style.display = "inline";
-		});
-		Array.prototype.forEach.call(document.getElementsByClassName('s'), (e) => {
-			e.style.display = "none";
-		});
-		document.getElementById('shortasm').style.display = "inline";
-		document.getElementById('longasm').style.display = "none";
-		localStorage.setItem('longasm', 'long');
-	}
-	function switchToShort() {
-		Array.prototype.forEach.call(document.getElementsByClassName('s'), (e) => {
-			e.style.display = "inline";
-		});
-		Array.prototype.forEach.call(document.getElementsByClassName('l'), (e) => {
-			e.style.display = "none";
-		});
-		document.getElementById('longasm').style.display = "inline";
-		document.getElementById('shortasm').style.display = "none";
-		localStorage.setItem('longasm', 'short');
-
-	}
-	</script><strong>SVE</strong> | <a href="sme.html">SME (WIP, no diagrams)</a><h1>A64 SIMD Instruction List: SVE Instructions</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A64 SIMD Instruction List: SVE Instructions</title>
+<link rel="stylesheet" href="assets/listing.css">
+<script src="assets/listing.js"></script>
+</head>
+<body>
+<strong>SVE</strong> | <a href="sme.html">SME (WIP, no diagrams)</a><h1>A64 SIMD Instruction List: SVE Instructions</h1>
 			<p>This is inspired by and based on the <a href="https://www.officedaytime.com/simd512e/">x86/x64 SIMD Instruction List</a> by Daytime.</p>
 			<p>This is not an official reference, and may contain mistakes. It is intended to make it easier to find instructions, and to provide
 			an alternative perspective. While writing SVE code, please refer to the
@@ -138,11 +23,11 @@
 				<table class="target">
 				<thead>
 					<tr>
-						<th>SVE Version</td>
-						<th>SME Version</td>
-						<th>Mode</td>
-						<th>Extensions</td>
-						<th>Presets</td>
+						<th>SVE Version</th>
+						<th>SME Version</th>
+						<th>Mode</th>
+						<th>Extensions</th>
+						<th>Presets</th>
 					</tr>
 				</thead>
 				<tr>
@@ -1630,15 +1515,11 @@ function HaveSVE2AES() { return document.getElementById("cbHaveSVE2AES").checked
 function HaveSVEFP64MatMulExt() { return document.getElementById("cbHaveSVEFP64MatMulExt").checked; }
 function HaveSVEFP32MatMulExt() { return document.getElementById("cbHaveSVEFP32MatMulExt").checked; }
 function HaveInt8MatMulExt() { return document.getElementById("cbHaveInt8MatMulExt").checked; }
-var wasUnavailable = {};
 function setAvailable(className, isAvailable) {
-	if ((wasUnavailable[className] && isAvailable) || (!wasUnavailable[className] && !isAvailable)) {		if (isAvailable) {
-			for (var e of document.getElementsByClassName(className)) { e.classList.remove("unavailable"); }
-		} else {
-			for (var e of document.getElementsByClassName(className)) { e.classList.add("unavailable"); }
-		}
+	for (var e of document.getElementsByClassName(className)) {
+		e.classList.toggle("unavailable", !isAvailable);
+		e.classList.toggle("hidden-unavailable", !isAvailable && window.shouldHideUnavailable && window.shouldHideUnavailable());
 	}
-	wasUnavailable[className] = !isAvailable;
 }
 function updateHighlighting() {
 	setAvailable("f0", (((HaveSME2p1() && SVEEnabled()) || NonStreamingSVEEnabled()) && HaveSVE2SHA3()));
@@ -1662,15 +1543,12 @@ function updateHighlighting() {
 	setAvailable("f18", (HaveSVE2() && NonStreamingSVEEnabled()));
 	setAvailable("f19", (HaveSVE2PMULL128() && NonStreamingSVEEnabled()));
 	setAvailable("f20", (HaveSVE2p1() && NonStreamingSVEEnabled()));
+	if (window.refreshAvailabilityRows) { window.refreshAvailabilityRows(); }
 }
 setTimeout( function () { updateHighlighting(); }, 0);
 setTimeout( function () { updateHighlighting(); }, 100);
 setTimeout( function () { updateHighlighting(); }, 500);
 </script><hr>
-<script>
-		document.write('<a href="javascript:switchToLong()" id="longasm" style="color:#000">Switch to long assembly</a><a href="javascript:switchToShort()" id="shortasm" style="color:#000;display:none">Switch to short assembly</a><br>');
-
-		if (localStorage.getItem('longasm') === "long") {
-			switchToLong();
-		}
-		</script>Created by <a href="https://mastodon.social/@dougall" style="color:#000">Dougall Johnson</a>, 2023.<br>Arm is a registered trademark of Arm Limited (or its subsidiaries) in some places.</body>
+<div id="asm-toggle"></div>
+Created by <a href="https://mastodon.social/@dougall" style="color:#000">Dougall Johnson</a>, 2023.<br>Arm is a registered trademark of Arm Limited (or its subsidiaries) in some places.</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+.l {
+    display: none;
+}
+
+table {
+    margin-bottom: 35px;
+    border-spacing: 0;
+}
+
+.t td {
+    background-color: #FFFFFF;
+    font-size: 9pt;
+}
+
+.t td,
+.t th,
+.t {
+    border: 1px solid #ccc;
+}
+
+table.t {
+    background-color: #ccc;
+}
+
+table.t thead {
+    z-index: 10;
+}
+
+.group {
+    font-size: 10pt;
+}
+
+.t td.empty {
+    background-color: #ddd;
+}
+
+.t th {
+    background-color: #eee;
+    min-width: 48px;
+}
+
+.t thead {
+    top: 0;
+    position: sticky;
+}
+
+.insnheading {
+    white-space: nowrap;
+}
+
+table a {
+    color: #000;
+}
+
+.intrinsics,
+.short-intrinsics {
+    color: #6778ED;
+}
+
+.group:not(:first-child) {
+    margin-top: 2px;
+}
+
+.unavailable {
+    opacity: 40%;
+}
+
+.hidden-unavailable,
+.row-hidden-unavailable,
+.table-hidden-unavailable,
+.heading-hidden-unavailable {
+    display: none !important;
+}
+
+.page-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.page-tools-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 14px;
+}
+
+.page-actions-top {
+    margin-top: 0;
+    justify-content: flex-end;
+}
+
+.page-actions-toggle {
+    white-space: nowrap;
+}
+
+.page-actions-toggle input {
+    margin-right: 6px;
+}
+
+.target th {
+    padding-right: 20px;
+    text-align: left;
+}
+
+.target td {
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.target button {
+    margin-bottom: 4px;
+}
+
+.left-column {
+    width: 170px;
+}
+
+#header a {
+    color: #000;
+}
+
+@page {
+    size: landscape;
+    margin: 12mm;
+}
+
+@media print {
+    .page-actions {
+        display: none !important;
+    }
+
+    .t thead {
+        position: static;
+    }
+}
